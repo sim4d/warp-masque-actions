@@ -9,8 +9,8 @@ name: 取 Windscribe 账号
 on:
   workflow_dispatch:
   # 每月 1 号跑一次，对上 Windscribe 的月度重置
-  schedule:
-    - cron: '0 4 1 * *'
+  # schedule:
+  #   - cron: '0 4 1 * *'
 
 permissions:
   contents: read
