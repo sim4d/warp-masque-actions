@@ -4,8 +4,8 @@ on:
   workflow_dispatch:
   # 证书 7 天到期。注意 cron 的 */6 是"日期能被 6 整除"，不是"每隔 6 天"，
   # 月末衔接会不均匀。取每 3 天跑一次，失败一次也还有余量。
-  schedule:
-    - cron: '0 3 */3 * *'
+  # schedule:
+  #   - cron: '0 3 */3 * *'
 
 permissions:
   contents: read
